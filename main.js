@@ -1,8 +1,11 @@
-const casa = document.querySelector(".casa");
+import { getTabuleiro } from "./state.js";
+
+const etabuleiro = document.querySelector(".tabuleiro");
 const disco = document.querySelector(".disco");
 
-console.log(casa)
-console.log(disco)
+let arrastado = null;
+
+setup();
 
 disco.addEventListener('dragstart', comecaArrastar);
 casa[1].addEventListener('dragover',passouPorCima);
