@@ -7,6 +7,7 @@ let arrastado = null;
 
 setup();
 
-disco.addEventListener('dragstart', comecaArrastar);
-casa[1].addEventListener('dragover',passouPorCima);
-casa[1].addEventListener
+function comecaArrastar(evento){
+    console.log(evento.target);
+    arrastado = evento.target;
+}
