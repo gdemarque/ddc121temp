@@ -1,4 +1,4 @@
-let tabuleiro = ['p', 'p', 'p', null, 'b', 'b', 'b' ,'b'];
+let tabuleiro = ['p', 'p', 'p', null, 'b', 'b', 'b'];
 
 export function getTabuleiro()
 {

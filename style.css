@@ -1,18 +1,44 @@
 * {
     box-sizing: border-box;
 }
-.tabuleiro{
-    background-color: goldenrod;
-    padding: 10px;
-}
-.casa{
-    background-color: aquamarine;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    
-}
-.disco{
-    background-color: black;
 
+body {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+}
+
+.tabuleiro {
+    background-color: goldenrod;
+    padding: 2%;
+    display: flex;
+    gap: 1%;
+    width: 100%;
+}
+
+.casa {
+    background-color: aquamarine;
+    width: calc(100% / 7);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disco {
+    background-color: black;
+    border: 15% solid white;
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.disco.branco {
+    background-color: white;
+    border-color: black;
 }
