@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+.tabuleiro{
+    background-color: goldenrod;
+    padding: 10px;
+}
+.casa{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    
+}
+.disco{
+    background-color: black;
+
+}
